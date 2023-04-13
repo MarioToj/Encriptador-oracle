@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="assets/crypt.png" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/sketchy/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="footer"><span class="badge bg-primary m-2">Made by Mario Enrique T.A</span></div>
+        <div class="logo"></div>
+        <div class="logos">
+            <img src="assets/Vector.png" alt="">
+        </div>
+        <div class="content" id="mi-formulario">
+           <div class="flex-form">
+            <input class="mt-5" type="text" name="frase" id="myInput" placeholder="Encriptar Frase">
+            <input class="mt-5" type="text" name="desfrase" id="desmyInput" placeholder="Des Encriptar Frase">
+           </div>
+          <div class="buttons">
+              <span ><img src="assets/warning.png" alt="">Solo letras minúsculas y sin acentos</span>
+              <div class="flex-b">
+                <button onclick="getValue()" id="bloquear" class="btn btn-success" type="submit">Encriptar</button>
+                <button onclick="getdesValue()" id="desbloquear" class="btn btn-warning" type="submit">Des Encriptar</button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+            <p id="mostrarTexto"></p>
+        
+            <span class="m-1" id="mostrarBoton"></span>
+           <div id="myDIV">
+            <img class="hideRes" src="assets/Muñeco.png" alt="">
+            <span class="title-p">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </span>
+           </div>
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+</body>
+</html>
